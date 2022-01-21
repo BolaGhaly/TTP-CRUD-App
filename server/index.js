@@ -141,14 +141,12 @@ app.get("/users/:id", async (req, res) => {
 //LOGIN
 app.post("/login", async (req, res) => {
   try {
-    let errors = {};
     const loginEmail = req.body.loginEmail;
     const loginPassword = req.body.loginPassword;
     const loginUser = await pool.query(
       "SELECT * FROM login_info WHERE email = $1 AND password = $2",
       [loginEmail, loginPassword]
     );
-    console.log(loginUser.rows.length);
     if (loginUser.rows.length === 0) {
       return res.status(400).json("Wrong username/password combination!");
     } else {

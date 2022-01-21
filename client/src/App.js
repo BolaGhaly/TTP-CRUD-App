@@ -1,4 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState } from "react";
 import "./App.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
@@ -8,7 +8,6 @@ import SignUp from "./components/SignUp";
 import Login from "./components/Login";
 
 function App() {
-  //"Anonymous"
   const [username, setUsername] = useState("Anonymous");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");

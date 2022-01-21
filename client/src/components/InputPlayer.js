@@ -1,5 +1,4 @@
-import React, { Fragment, useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { Fragment, useState } from "react";
 import ListPlayers from "./ListPlayers";
 
 function InputPlayer({ username, setUsername }) {
@@ -21,10 +20,6 @@ function InputPlayer({ username, setUsername }) {
     }
   };
 
-  // useEffect(() => {
-  //   setUsername("Anonymous");
-  // }, [username]);
-
   return (
     <Fragment>
       <div>
@@ -38,14 +33,6 @@ function InputPlayer({ username, setUsername }) {
               Sign Up
             </button>
           </a>
-          {/* <Link>
-          <button
-            type="button"
-            className="btn btn-warning ms-auto login-button shadow-none"
-          >
-            Sign Up
-          </button>
-          </Link> */}
         </div>
         <div>
           <h1 className="text-center nba-title">
