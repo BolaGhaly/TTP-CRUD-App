@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --title-text-shadow: orange 4px 4px 4px;
+  --black-text-shadow: rgb(0, 0, 0) 0px 0px 4px;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  background-color: #070707;
+  font-family: "Poppins", sans-serif !important;
+  text-overflow: ellipsis !important;
+}
+
+.w-fit {
+  width: fit-content;
+}
+
+.font-whitesmoke {
+  color: whitesmoke;
+}
+
+.my-opacity {
+  opacity: 1 !important;
+}
+
+/*------------------------------- Icons ---------------------------*/
+.fa-basketball-ball {
+  text-shadow: none;
+  color: orange;
+  font-size: 1.75rem;
+}
+
+.fa-user {
+  color: orange;
+  font-size: 20px;
+}
+
+/*------------------------------- Buttons ---------------------------*/
+.form-submit-button {
+  color: rgb(0, 0, 0);
+  background-color: whitesmoke;
+  padding: 5px 30px;
+  border-radius: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  border: 1px solid black;
+}
+
+/*------------------------------- Bootstrap ---------------------------*/
+h1,
+h2 {
+  padding: 0;
+  margin: 0;
+}
+
+.modal-title {
+  cursor: default;
+}
+
+.card {
+  border: 2px solid black;
+  box-shadow: -8px 8px 0px rgb(255, 166, 0);
+}
+
+.modal-open {
+  padding-right: 0 !important;
+}
+/*------------------------------- Main Page ---------------------------*/
+.nba-title {
+  padding: 20px;
+  color: rgb(230, 230, 230);
+  text-shadow: var(--title-text-shadow);
+  font-size: 2rem;
+}
+
+.player-form {
+  text-shadow: var(--black-text-shadow);
+  color: rgb(230, 230, 230);
+  background-color: rgb(65, 65, 65);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.player-form h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 500;
+  padding: 50px 0 15px;
+  margin-bottom: 25px;
+}
+
+.player-form h2::after {
+  content: "";
+  display: block;
+  width: 90%;
+  border-radius: 50px;
+  border-bottom: 2px solid rgb(206, 206, 206);
+  margin: 2px auto 0px;
+}
+
+form label {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+form input {
+  height: max-content;
+  padding: 8px 15px !important;
+}
+
+form input::placeholder {
+  font-weight: 500;
+}
+
+form label,
+form input,
+form input::placeholder {
+  letter-spacing: 1px;
+}
+
+/*------------------------------- Sign Up Page ---------------------------*/
+.signup-form {
+  background-color: whitesmoke;
+  padding: 20px 50px;
+  width: fit-content;
+}
+
+.signup-form h2 {
+  letter-spacing: 1px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+#signup-username-error,
+#signup-email-error,
+#signup-password-error,
+#login-email-error,
+#login-password-error,
+#wrong-login-input {
+  color: red !important;
+  font-weight: 600;
+}
+/*------------------------------- Login Page ---------------------------*/
+
+.login-title {
+  color: whitesmoke;
+  margin: 15px 5px 0 40px;
+  font-size: 22px;
+  font-weight: 500;
+}
+
+.login-button {
+  font-weight: 600;
+  margin: 15px 40px 0 5px;
+}
+
+/*------------------------------- Media Queries ------------------------------*/
+@media screen and (max-width: 425px) {
+  .card {
+    margin: 24px 0 0 !important;
+  }
+  .login-form {
+    flex-direction: column;
+  }
+  .login-title {
+    margin: 20px 0 0;
+  }
+  .login-button {
+    margin: 20px 0 0 !important;
+  }
+  .nba-title {
+    font-size: 1.75rem;
+  }
+  .player-form h2,
+  .signup-form h2 {
+    font-size: 26px !important;
+  }
+}
+
+/* @media screen and (max-width: 320px) {
+} */
